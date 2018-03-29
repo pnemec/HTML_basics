@@ -3,21 +3,33 @@
 <head>
   <meta charset="utf-8">
   <title>Hello, Marketa </title>
+
+    <script>
+    function sumNumbers() {
+        var valA = document.getElementById("a").value;
+        var valB = document.getElementById("b").value;
+        var sum = valA + valB;
+
+        document.getElementById("result").value= sum;
+    }
+    </script>
+
+
 </head>
 
 <body>
 
     <h1> Simple calculator </h1>
 
-    <input type="number" name="a" />
+    <input type="number" id="a" />
     +
-    <input type="number" name="b" />
+    <input type="number" id="b" />
     =
-    <input type="number" name="result" />
+    <input type="number" id="result" />
 
     </br>
 
-    <button type="button">Calculate</button>
+    <button type="button" onclick="sumNumbers()" >Calculate</button>
     
 </body>
 </html>
